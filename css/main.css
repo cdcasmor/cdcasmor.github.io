@@ -515,14 +515,14 @@ header{
 .skillbar-bar {
 	height:7px;
 	width:0px;
-	background:#e88988;
+	background:#1962ff;
 }
 
 .skill-bar-percent {
 	position:absolute;
 	top:-24px;
 	font-size:14px;
-	color:blue;
+	color:#796f7a;
 	margin-left:-20px;
 }
 
