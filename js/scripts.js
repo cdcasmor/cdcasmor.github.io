@@ -494,7 +494,7 @@ function initSolonick() {
     if ($("#twitts-container").length > 0) {
         var config1 = {
             "profile": {
-                "screenName": 'TiffanyGomez94'
+                "screenName": 'cdcasmor'
             },
             "domId": 'twitts-container',
             "maxTweets": 2,
