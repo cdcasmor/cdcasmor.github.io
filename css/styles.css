@@ -10112,3 +10112,100 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* ==========================================
+   DARK MODE OVERRIDES - NEON CYBER PULSE
+   ========================================== */
+
+   :root {
+    /* Colors pulled directly from your palette */
+    --neon-cyan: #00F5FF;      /* Tertiary swatch */
+    --neon-magenta: #FF2D55;   /* Secondary swatch */
+    --muted-blue: #3298DC;     /* Primary swatch */
+    --dark-panel: #1A1A1B;     /* Neutral swatch */
+    --dark-bg: #0D0D0D;        /* Custom deep black for main content */
+    
+    --text-main: #E2E8F0;
+    --text-muted: #94A3B8;
+  }
+  
+  /* 1. Global Backgrounds and Text */
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+  }
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #FFFFFF;
+  }
+  
+  .text-primary {
+    color: var(--neon-cyan) !important;
+  }
+  
+  p.lead, .subheading {
+    color: var(--text-muted);
+  }
+  
+  /* 2. Links and Interactions */
+  a {
+    color: var(--neon-cyan);
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--neon-magenta);
+    text-decoration: none;
+  }
+  
+  /* 3. Sidebar Navigation Overrides */
+  .bg-primary {
+    /* Overrides the default blue sidebar with the dark neutral grey */
+    background-color: var(--dark-panel) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  #sideNav .navbar-brand .img-profile {
+    border: 0.5rem solid rgba(0, 245, 255, 0.2); /* Subtle cyan ring around photo */
+  }
+  
+  #sideNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  
+  #sideNav .navbar-nav .nav-item .nav-link:hover,
+  #sideNav .navbar-nav .nav-item .nav-link:focus,
+  #sideNav .navbar-nav .nav-item .nav-link.active {
+    color: var(--neon-cyan);
+  }
+  
+  /* 4. Formatting and Dividers */
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* 5. Social & Tech Icons */
+  .social-icons .social-icon {
+    background-color: var(--dark-panel);
+    color: var(--text-main);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons .social-icon:hover {
+    background-color: var(--neon-magenta);
+    color: #FFFFFF;
+    border-color: var(--neon-magenta);
+    box-shadow: 0 0 12px rgba(255, 45, 85, 0.6); /* Neon magenta glow */
+  }
+  
+  .list-inline-item i {
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+  }
+  
+  .dev-icons .list-inline-item i:hover {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 12px rgba(0, 245, 255, 0.6); /* Neon cyan glow */
+  }
